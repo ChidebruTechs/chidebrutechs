@@ -203,7 +203,7 @@ h6 {
 ------------------------------*/
 .index-page .header {
   --background-color: rgba(255, 255, 255, 0);
-  --heading-color: #ffffff;
+  --heading-color: #02CAF5;
   --nav-color: rgba(255, 255, 255, 0.5);
   --nav-hover-color: #ffffff;
 }
@@ -212,9 +212,9 @@ h6 {
 ------------------------------*/
 .index-page.scrolled .header {
   --background-color: #ffffff;
-  --heading-color: #32353a;
+  --heading-color: #02CAF5;
   --nav-color: #3a3939;
-  --nav-hover-color: #e84545;
+  --nav-hover-color: #CE0AFF;
 }
 
 /*--------------------------------------------------------------
@@ -240,11 +240,11 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: var(--heading-color);
     padding: 18px 15px;
-    font-size: 16px;
+    font-size: 1.2rem;
     font-family: var(--nav-font);
-    font-weight: 400;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -588,7 +588,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #ffffff;
+  border: 6px solid #CE0AFF;
   border-color: var(--accent-color) transparent var(--accent-color) transparent;
   border-radius: 50%;
   width: 60px;
@@ -786,12 +786,13 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 44px;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: var(--heading-color);
+  /* color: color-mix(in srgb, var(--default-color), transparent 20%); */
   margin: 5px 0 0 0;
   font-size: 20px;
 }
